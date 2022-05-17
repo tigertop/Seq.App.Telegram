@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="/" Visible="false" />
-    <None Include="./obj/publish/**/*.*" Exclude="./obj/publish/Seq.App.Telegram.dll;./obj/publish/Seq.Apps.dll;./obj/publish/Serilog.dll" Pack="true" PackagePath="lib/$(TargetFramework)" Visible="false" />
+    <None Include="./obj/publish/**/*.*" Exclude="./obj/publish/TopSoft.Seq.App.Telegram.dll;./obj/publish/Seq.Apps.dll;./obj/publish/Serilog.dll" Pack="true" PackagePath="lib/$(TargetFramework)" Visible="false" />
   </ItemGroup>
 
 </Project>
