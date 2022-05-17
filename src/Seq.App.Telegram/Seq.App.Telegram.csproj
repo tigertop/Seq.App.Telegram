@@ -13,6 +13,7 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <IncludeBuildOutput>true</IncludeBuildOutput>
     <AssemblyName>TopSoft.Seq.App.Telegram</AssemblyName>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
   </PropertyGroup>
 
 

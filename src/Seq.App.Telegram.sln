@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seq.App.Telegram", "Seq.App.Telegram\Seq.App.Telegram.csproj", "{D64D284B-74FF-45DA-9687-E75DB08538AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1ADBBE5-C731-4578-8CDB-B7FD129E859D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

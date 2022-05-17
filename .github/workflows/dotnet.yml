@@ -17,9 +17,11 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.3
     - name: nuget restore
       run: nuget restore src
+    - name: cd
+      run: cd src/Seq.App.Telegram
     - name: build
-      run: msbuild src/Seq.App.Telegram/Seq.App.Telegram.csproj /p:Configuration=Release /p:Platform=AnyCPU /v:q
+      run: dotnet publish -c Release -o ./obj/publish
     - name: Create the package
-      run: dotnet pack -c Release src/Seq.App.Telegram/Seq.App.Telegram.csproj
+      run: dotnet pack --no-build -c Release -o ./bin/nuget -p:PackageVersion="1.0.0"
     - name: Publish the package to GPR
-      run: dotnet nuget push D:\a\Seq.App.Telegram\Seq.App.Telegram\TopSoft.Seq.App.Telegram.1.0.0.nupkg -s "https://api.nuget.org/v3/index.json" -k ${{ secrets.NUGET_TOCKEN }}
+      run: dotnet nuget push D:\a\Seq.App.Telegram\src\Seq.App.Telegram\bin\nuget\TopSoft.Seq.App.Telegram.1.0.0.nupkg -s "https://api.nuget.org/v3/index.json" -k ${{ secrets.NUGET_TOCKEN }}
