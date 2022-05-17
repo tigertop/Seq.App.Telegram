@@ -20,6 +20,6 @@ jobs:
     - name: build
       run: msbuild src/Seq.App.Telegram/Seq.App.Telegram.csproj /p:Configuration=Release /p:Platform=AnyCPU /v:q
     - name: Create the package
-      run: dotnet pack -c Release src/Seq.App.Telegram/Seq.App.Telegram.csproj -Properties Configuration=Release
+      run: dotnet pack -c Release src/Seq.App.Telegram/Seq.App.Telegram.csproj
     - name: Publish the package to GPR
       run: dotnet nuget push D:\a\Seq.App.Telegram\Seq.App.Telegram\TopSoft.Seq.App.Telegram.1.0.0.nupkg -s "https://api.nuget.org/v3/index.json" -k ${{ secrets.NUGET_TOCKEN }}
