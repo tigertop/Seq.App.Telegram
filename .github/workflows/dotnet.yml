@@ -22,4 +22,4 @@ jobs:
     - name: Create the package
       run: dotnet pack -c Release src/Seq.App.Telegram/Seq.App.Telegram.csproj
     - name: Publish the package to GPR
-      run: dotnet nuget push "D:\a\Seq.App.Telegram\src\Seq.App.Telegram\bin\Release\TopSoft.Seq.App.Telegram.1.0.0.nupkg" -s "https://api.nuget.org/v3/index.json" -k ${{ secrets.NUGET_TOCKEN }}
+      run: dotnet nuget push "**/TopSoft.Seq.App.Telegram.1.0.0.nupkg" -s "https://api.nuget.org/v3/index.json" -k ${{ secrets.NUGET_TOCKEN }}
